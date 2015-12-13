@@ -5,9 +5,11 @@ body {
 h1 {
   font-family: "bebas_neueregular", sans-serif;
   font-size: 10em;
+  color: $salmon;
 
   @media all and (max-width: $mobile) {
     font-size: 3.5em;
+
   }
 }
 
