@@ -1,26 +1,23 @@
 
+
+
 <div id="wrapper">
 	<div class="col-sm-12">
-	  <div id="hero">
-	    <div class="header">
-	      <h1>Anna & David</h1>
-			<h2>Are Getting Married!</h2>
-			<h3>August 13, 2015 @ 4:00 pm</h3>
-	    </div>
-	  </div>	
+		<div id="hero">
+			<div class="header">
+				<div class="col-sm-6">
+				</div>
+				<div class="col-sm-6">
+					<h1>Anna & David</h1>
+					<h2>Are Getting Married!</h2>
+					<h3>August 13, 2015 @ 4:00 pm</h3>
+				</div>
+			</div>
+		</div>	
 	</div>
-  <div id="content">
-    <h2> If nothing goes right for you , go left.</h2>
-    <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
-  </div>
-  <div id="footer">
-    <p>Made with Love by Nichole Shelton (nicholesvibrantlife.com)</p>
-  </div>
-</div>
-	 
-
+	<div id="content">
 		<div class="location row">
-				<h2>When & Where</h2>
+			<h2>When & Where</h2>
 			<div class="col-sm-4">
 				<%= image_tag('OldHomestead.jpg') %>
 			</div>
@@ -34,23 +31,25 @@
 				<img src="http://placehold.it/350x350">
 				<h5>Google Map Image</h5>
 			</div>
-		</div>
+		</div> <!-- /row -->
 
 		<div class="potluck row">
 			<h2>Potluck</h2>
-			<h4>“When you invite someone to sit at your table and you want to cook for them, you're inviting a person into your life” - Maya Angelou</h4>
+			<h3>“When you invite someone to sit at your table and you want to cook for them, you're inviting a person into your life”</h3>
+			 <h3>- Maya Angelou</h3>
 			<div class="col-sm-6">
 				<p>
 					Our favorite meals have always been those we’ve shared in the homes of our family and friends. To celebrate our marriage and the gathering of our community, we want to recreate that type of meal with all of you. To that end, we’re hosting a wedding potluck! You’re invited to participate by bringing a dish that’s meaningful to you -- an old family recipe, something that you love to eat, or something that you’re excited to make and share with others.
 					We’ll provide a main dish, cake, and beverages. We can’t wait to celebrate with all of you and share a meal that’s full of history, made with love, and thoughtfully created by the people we care about the most. Participating in the potluck is entirely up to you -- if you’re unable or don’t want to participate, that is perfectly okay. Either way, we’re so excited to share this day with you!
 				</p>
-				<p>Want to participate? Great! Here are some logistics >> </p>
+				<p><%= link_to "Want to participate? Great! Here are some logistics", potluck_path %></p>
 			</div>
 			<div class="col-sm-6">
 				<img src="http://placehold.it/350x350">
 				<h5>Tasty Food</h5>
 			</div>
-		</div>
+		</div> <!-- /row -->
+
 
 		<div class="registry row">
 			<h2>Registry</h2>
@@ -64,11 +63,13 @@
 					your presence, and we aren’t expecting or needing anything more than 
 					that. We are so thankful for you!
 				</p>
-					<p><%= link_to "Thankful Gift Registry", 'https://thankfulregistry.com/davidandanna', :target => "_blank" %></p>
+				<p><%= link_to "Thankful Gift Registry", 'https://thankfulregistry.com/davidandanna', :target => "_blank" %></p>
 			</div>
-		</div>
+		</div> <!-- /row -->
 
-			
-		
+	</div> <!-- /content -->
+	<div id="footer">
+		<p>Made with Love by Nichole Shelton (nicholesvibrantlife.com)</p>
+	</div>
+</div>
 
-		

@@ -4,38 +4,45 @@ Rails.application.routes.draw do
     get code, :to => "errors#show", :code => code
   end
 
-  resources :events, except: [:index] do
+  resources :events, :photos, :tasks
+ get '/potluck' =>  'events#index'
+ get '/photos' => 'photos#index'
+ get '/our-story' => 'tasks#index'
 
-    resources :groups do
-      resources :guests
-    end
+  # resources :events, except: [:index] do
 
-    resources :photos
-    resources :venue_photos
+  #   resources :groups do
+  #     resources :guests
+  #   end
 
-    resources :task_lists do
-      resources :tasks
-    end
+  #   resources :photos
+  #   resources :venue_photos
 
-    resources :guests
-    resources :groups do
-      put 'rsvp', on: :collection
-      resources :guests
-    end
-  end
+  #   resources :task_lists do
+  #     resources :tasks
+  #   end
 
-  namespace :admin do
-    resources :events, except: [:index] do
-      resources :sections
-      resources :guests, except: [:show]
-      resources :groups
-    end
-    root "admin#dashboard"
-  end
+  #   resources :guests
+  #   resources :groups do
+  #     put 'rsvp', on: :collection
+  #     resources :guests
+  #   end
+  # end
 
-  resources :photos, :only => [:index, :create, :destroy]
+  # namespace :admin do
+  #   resources :events, except: [:index] do
+  #     resources :sections
+  #     resources :guests, except: [:show]
+  #     resources :groups
+  #   end
+  #   root "admin#dashboard"
+  # end
 
-  match "/delayed_job" => DelayedJobWeb, :anchor => false, via: [:get, :post]
+  # resources :photos, :only => [:index, :create, :destroy]
+
+  # match "/delayed_job" => DelayedJobWeb, :anchor => false, via: [:get, :post]
+
+
 
   root "events#show"
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="theme--popcorn" lang="en" ng-app="foh">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 
@@ -24,10 +24,23 @@
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
-  </head>
+</head>
 
-  <body ng-cloak>
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
-  </body>
+<body ng-cloak>    
+   <header>
+      <div class="wrapper">
+          <nav>
+            <%= link_to 'Home', root_path %>
+            <a href="#">When & Where</a>
+            <a href="#">Potluck</a>
+            <a href="#">Registry</a>
+            <a href="#">RSVP</a>
+            <%= link_to 'Our Story', our_story_path %>
+          </nav>
+      </div>
+    </header>
+
+<%= yield %>
+<%= javascript_include_tag "application" %>
+</body>
 </html>

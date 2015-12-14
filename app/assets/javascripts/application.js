@@ -14,7 +14,6 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require lodash
-//= require angular
 //= require restangular
 //= require foundation
 //= require turbolinks

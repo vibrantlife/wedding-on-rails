@@ -1,9 +1,9 @@
 class TasksController < ApplicationController
 
-  before_filter :set_event, only: [:index, :show, :new, :edit, :update]
-  before_filter :set_task_list, only: [:index, :show, :new, :edit, :update]
-  before_filter :set_task, only: [:show, :update, :edit]
-  before_filter :set_tasks, only: [:index]
+  # before_filter :set_event, only: [:index, :show, :new, :edit, :update]
+  # before_filter :set_task_list, only: [:index, :show, :new, :edit, :update]
+  # before_filter :set_task, only: [:show, :update, :edit]
+  # before_filter :set_tasks, only: [:index]
 
   def index
   end
