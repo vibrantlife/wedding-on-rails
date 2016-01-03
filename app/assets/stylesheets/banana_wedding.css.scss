@@ -92,6 +92,13 @@ li.active a {
   height:100vh;
 }
 
+#table-of-food {
+  background-image:url('table-of-food-2.jpg');
+  background-size:contain;
+  position:relative;
+  height:100vh;
+}
+
 .header{
   position:absolute;
   top:50%;
@@ -114,6 +121,8 @@ li.active a {
 	background-color: $mint;
 }
 
+
+
 //potluck section 
 .potluck {
 
@@ -121,6 +130,10 @@ li.active a {
 		color: $salmon
 	}
 	
+}
+
+.potluck img {
+  height: 300px;
 }
 
 //registry section 
@@ -132,6 +145,71 @@ li.active a {
 	h2 {
 		color: $off-white;
 	}
+}
+
+
+//our-story page
+.indiv {
+  border: 2px solid black;
+  padding: 30px;
+  height: 300px;
+}
+
+.us {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 30px;
+  height: 450px;
+  position: relative;
+  top: 200px;
+
+}
+
+.anna, .dijon {
+  position: relative;
+  left: 200px;
+}
+
+.david, .willie {
+  position: relative;
+  right: 200px;
+}
+
+.anna, .david {
+  top: 50px;
+}
+
+.dijon, .willie {
+  top: -100px; 
+}
+
+.anna {
+  background: url('anna.JPG') no-repeat center;
+  background-size: cover;
+}
+
+.anna-story, .david-story, .dijon-story, .willie-story, .our-story {
+  display: none;
+  color: purple;
+}
+
+.anna:hover .anna-story, .david:hover .david-story, .dijon:hover .dijon-story, .willie:hover .willie-story, .us:hover .our-story, .anna:focus .anna-story, .david:focus .david-story, .dijon:focus .dijon-story, .willie:focus .willie-story, .us:focus .our-story, .anna:active .anna-story, .david:active .david-story, .dijon:active .dijon-story, .willie:active .willie-story, .us:active .our-story{
+  display: block;
+}
+
+.david {
+  background: url('david.JPG') no-repeat center; 
+  background-size: cover;
+}
+
+.dijon {
+  background: url('cuddles.JPG') no-repeat center;
+  background-size: cover;
+}
+
+.willie {
+  background: url('david-crys.JPG') no-repeat center;
+  background-size: cover;
 }
 
 //footer 

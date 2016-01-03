@@ -1,4 +1,4 @@
-
+<!-- homepage -->
 
 
 <div id="wrapper">
@@ -28,8 +28,9 @@
 				<p>Check back soon for times and travel directions!</p>
 			</div>
 			<div class="col-sm-4">
-				<img src="http://placehold.it/350x350">
-				<h5>Google Map Image</h5>
+				<div id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12567.074517187017!2d-122.22623150410398!3d38.05247714802413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857178bc5469f5%3A0x3d8937c3f7a0dd6a!2sThe+Old+Homestead!5e0!3m2!1sen!2sus!4v1451853785053" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div> <!-- /row -->
 
@@ -45,8 +46,7 @@
 				<p><%= link_to "Want to participate? Great! Here are some logistics", potluck_path %></p>
 			</div>
 			<div class="col-sm-6">
-				<img src="http://placehold.it/350x350">
-				<h5>Tasty Food</h5>
+				<%= image_tag('brunch.jpeg') %>
 			</div>
 		</div> <!-- /row -->
 
