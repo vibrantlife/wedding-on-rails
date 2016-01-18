@@ -1,3 +1,4 @@
+
 $salmon: #fc906c;
 $mint: #a3d2ce;
 $mint-light: #cfe6e4;
@@ -5,12 +6,12 @@ $brown: #c9b79e;
 $off-white: #fafafa;
 
 .col-sm-12 {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 
 .row {
-	max-width: 120.5rem;
-	padding: 20px 30px;
+  max-width: 120.5rem;
+  padding: 20px 30px;
 }
 
 //nav 
@@ -27,6 +28,20 @@ header {
     z-index: 999;
     background: rgba(50,50,50,.3);
     box-shadow: 0 10px 20px rgba(50,50,50,.3);
+}
+
+.header {
+  h1   {
+    margin: 100px 0 0 60px;
+    font-size: 8em !important;
+    }
+    .wedding-info {
+      margin: 0 0 0 40px;
+      h4 {
+        color: $salmon;
+        font-weight: 600;
+      }
+    }
 }
 
 nav {
@@ -87,9 +102,21 @@ li.active a {
 
 #hero{
   background-image:url('Anna_David.jpg');
-  background-size:cover;
-  position:relative;
   height:100vh;
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  .header{
+    position:absolute;
+    top:50%;
+    text-align:center;
+    width:100%;
+    -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+  }
+  
 }
 
 #table-of-food {
@@ -99,18 +126,7 @@ li.active a {
   height:100vh;
 }
 
-.header{
-  position:absolute;
-  top:50%;
-  text-align:center;
-  width:100%;
-  -ms-transform: translate(0,-50%); /* IE 9 */
-  -webkit-transform: translate(0,-50%); /* Safari */
-  transform: translate(0,-50%);  
-  	h1, h2, h3 {
-  		color: $white;
-  	}
-}
+
 
 
 
@@ -118,18 +134,25 @@ li.active a {
 
 // location section
 .location {
-	background-color: $mint;
+  background-color: $mint;
 }
 
+#map iframe body {
+  background-color: transparent;
+  #mapDiv {
+    background-color: transparent; 
+    margin: 0 200px 0 0;
+  }
+}
 
 
 //potluck section 
 .potluck {
 
-	h3 {
-		color: $salmon
-	}
-	
+  h3 {
+    color: $salmon
+  }
+  
 }
 
 .potluck img {
@@ -138,13 +161,13 @@ li.active a {
 
 //registry section 
 .registry {
-	background-color: $salmon;
-	img {
-		border-radius: 50%;
-	}
-	h2 {
-		color: $off-white;
-	}
+  background-color: $salmon;
+  img {
+    border-radius: 50%;
+  }
+  h2 {
+    color: $off-white;
+  }
 }
 
 

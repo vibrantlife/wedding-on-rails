@@ -14,7 +14,6 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require lodash
-//= require restangular
 //= require foundation
 //= require turbolinks
 //= require datetimepicker
@@ -33,3 +32,4 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
