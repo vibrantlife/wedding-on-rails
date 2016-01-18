@@ -33,7 +33,7 @@
       <div class="wrapper">
           <nav>
             <%= link_to 'Home', root_path %>
-            <a href="#">When & Where</a>
+            <a href="#venue">When & Where</a>
             <%= link_to 'Potluck', potluck_path %>
             <%= link_to 'Registry', 'https://thankfulregistry.com/davidandanna', :target => '_blank'%>
             <%= link_to 'RSVP', 'http://david-and-annas-wedding.anrsvp.com/', :target => "_blank" %>
@@ -43,6 +43,6 @@
     </header>
 
 <%= yield %>
-<!-- <%= javascript_include_tag "application" %> -->
+<%= javascript_include_tag "application" %> 
 </body>
 </html>
