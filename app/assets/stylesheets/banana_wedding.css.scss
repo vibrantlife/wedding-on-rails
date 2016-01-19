@@ -2,6 +2,7 @@
 $salmon: #fc906c;
 $mint: #a3d2ce;
 $mint-light: #cfe6e4;
+$mint-dark: #769E9B;
 $brown: #c9b79e;
 $off-white: #fafafa;
 
@@ -14,6 +15,10 @@ $off-white: #fafafa;
   padding: 20px 30px;
 }
 
+
+p {
+  font-family: "bebas_neueregular", sans-serif;
+}
 //nav 
 
 * {
@@ -119,22 +124,13 @@ li.active a {
   
 }
 
-#table-of-food {
-  background:url('table-of-food-2.jpg') no-repeat;
-  background-size:contain;
-  position:relative;
-  height:100vh;
-}
-
-
-
-
-
-
 
 // location section
 .location {
   background-color: $mint;
+  h2, p {
+    color: $off-white;
+  }
 }
 
 #map iframe body {
@@ -149,8 +145,13 @@ li.active a {
 //potluck section 
 .potluck {
 
-  h3 {
-    color: $salmon
+  h4 {
+    color: $salmon;
+    line-height: 1;
+  }
+  a {
+    color: $mint-dark;
+    text-decoration: underline;
   }
   
 }
@@ -165,45 +166,77 @@ li.active a {
   img {
     border-radius: 50%;
   }
-  h2 {
+  h2, p {
     color: $off-white;
+  }
+  a {
+    color: $mint-dark;
+    text-decoration: underline;
   }
 }
 
 
-//our-story page
+// ------------- potluck page 
+#table-of-food {
+  background:url('table-of-food-2.jpg') no-repeat;
+  background-size:100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height:100vh;
+
+  h2, h3 {
+  color: $white;
+  font-weight: 600;
+  }
+}
+
+.potluck-details {
+  h3 {
+  color: $mint-dark;
+  }
+}
+
+
+
+//-------------------our-story page
+.our-row {
+  position: relative;
+  top: -200px;
+  z-index: 100;
+}
+
+.row-diwillie {
+  position: relative;
+  top: -400px;
+}
+
+
 .indiv {
   border: 2px solid black;
   padding: 30px;
-  height: 300px;
+  height: 350px;
+  border-radius: 20%;
 }
 
 .us {
   border: 2px solid black;
   border-radius: 50%;
-  padding: 30px;
-  height: 450px;
-  position: relative;
-  top: 200px;
-
+  height: 400px;
 }
-
 .anna, .dijon {
-  position: relative;
-  left: 200px;
+
 }
 
 .david, .willie {
-  position: relative;
-  right: 200px;
+
 }
 
 .anna, .david {
-  top: 50px;
+
 }
 
 .dijon, .willie {
-  top: -100px; 
+ 
 }
 
 .anna {
@@ -213,7 +246,7 @@ li.active a {
 
 .anna-story, .david-story, .dijon-story, .willie-story, .our-story {
   display: none;
-  color: purple;
+  color: $mint-light;
 }
 
 .anna:hover .anna-story, .david:hover .david-story, .dijon:hover .dijon-story, .willie:hover .willie-story, .us:hover .our-story, .anna:focus .anna-story, .david:focus .david-story, .dijon:focus .dijon-story, .willie:focus .willie-story, .us:focus .our-story, .anna:active .anna-story, .david:active .david-story, .dijon:active .dijon-story, .willie:active .willie-story, .us:active .our-story{
