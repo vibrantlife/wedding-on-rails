@@ -29,7 +29,7 @@
 </head>
 
 <body ng-cloak>    
-   <header>
+<!--    <header>
       <div class="wrapper">
           <nav>
             <%= link_to 'Home', root_path %>
@@ -40,7 +40,31 @@
             <%= link_to 'Our Story', our_story_path %>
           </nav>
       </div>
-    </header>
+  </header> -->
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse-wedding" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+            <a class="navbar-brand" href="#">Brand</a>
+
+        <div class="collapse navbar-collapse" id="nav-collapse-wedding">
+            <ul class="nav navbar-nav navbar-right">
+                <li><%= link_to 'Home', root_path%></li>
+                <li><a href="#venue">When & Where</a></li>
+                <li><%= link_to 'Potluck', potluck_path%></li>
+                <li><%= link_to 'Registry', 'https://thankfulregistry.com/davidandanna', :target => '_blank' %></li>
+                <li><%= link_to 'RSVP', 'http://david-and-annas-wedding.anrsvp.com/', :target => "_blank" %></li>
+                <li> <%= link_to 'Our Story', our_story_path %></li>
+            </ul>
+        </div>
+    </nav>
 
 <%= yield %>
 <%= javascript_include_tag "application" %> 
