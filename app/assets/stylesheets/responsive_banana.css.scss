@@ -14,3 +14,18 @@
 		height: auto;
 	}
 }
+
+@media only screen and (max-width: 765px) {
+	.navbar-nav li {
+		display: block;
+	}
+	.navbar-collapse {
+		background-color: rgba(255, 255, 255, 0.8)
+	}
+	.navbar-toggle {
+	background-color: $mint;
+	}
+	.navbar-toggle:hover, .navbar-toggle:focus {
+		background-color: $salmon !important;
+	}
+}
