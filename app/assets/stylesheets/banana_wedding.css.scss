@@ -15,6 +15,13 @@ $off-white: #fafafa;
   padding: 20px 30px;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: $mint;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: $salmon;
+}
 
 p {
   font-family: "bebas_neueregular", sans-serif;
@@ -38,7 +45,7 @@ header {
 .header {
   h1   {
     margin: 100px 0 0 60px;
-    font-size: 8em !important;
+    font-size: 7em !important;
     }
     .wedding-info {
       margin: 0 0 0 40px;
@@ -51,7 +58,7 @@ header {
 
 
 .navbar-default {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   border:none;
 }
 
@@ -89,7 +96,7 @@ li.active a {
 //header image with picture
 
 #hero{
-  background-image:url('Anna_David.jpg');
+  background-image:url('AnnaDavid_PotluckHomepage.jpg');
   height:100vh;
   background-size: 100%;
   background-position: top center;
@@ -161,15 +168,18 @@ li.active a {
 
 // ------------- potluck page 
 #table-of-food {
-  background:url('table-of-food-2.jpg') no-repeat;
+  background:url('AnnaDavid_TopPhoto.jpg') no-repeat;
   background-size:100%;
   background-position: top center;
   background-repeat: no-repeat;
   height:100vh;
 
   h2, h3 {
-  color: $white;
+  color: $salmon;
   font-weight: 600;
+  }
+  .col-sm-12 {
+    padding-top: 5em !important;
   }
 }
 
@@ -182,49 +192,15 @@ li.active a {
 
 
 //-------------------our-story page
-.our-row {
-  position: relative;
-  top: -200px;
-  z-index: 100;
-}
-
-.row-diwillie {
-  position: relative;
-  top: -400px;
-}
-
-
-.indiv {
-  border: 2px solid black;
-  padding: 30px;
-  height: 350px;
-  border-radius: 20%;
-}
-
-.us {
-  border: 2px solid black;
-  border-radius: 50%;
-  height: 400px;
-}
-.anna, .dijon {
-
-}
-
-.david, .willie {
-
-}
-
-.anna, .david {
-
-}
-
-.dijon, .willie {
- 
+#our-story {
+  background-color: $mint-light;
 }
 
 .anna {
   background: url('anna.JPG') no-repeat center;
-  background-size: cover;
+  background-size: contain;
+  height: 200px;
+  border-radius: 20%;
 }
 
 .anna-story, .david-story, .dijon-story, .willie-story, .our-story {
@@ -238,17 +214,38 @@ li.active a {
 
 .david {
   background: url('david.JPG') no-repeat center; 
-  background-size: cover;
+  background-size: contain;
+  height: 200px;
+  border-radius: 20%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 .dijon {
   background: url('cuddles.JPG') no-repeat center;
-  background-size: cover;
+  background-size: contain;
+  height: 200px;
+  border-radius: 20%;
+    transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 .willie {
   background: url('david-crys.JPG') no-repeat center;
-  background-size: cover;
+  background-size: contain;
+  height: 200px;
+  border-radius: 20%;
+    transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 //footer 
