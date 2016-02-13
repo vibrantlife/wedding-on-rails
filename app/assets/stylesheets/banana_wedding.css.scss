@@ -198,24 +198,17 @@ li.active a {
 
 .anna {
   background: url('anna.JPG') no-repeat center;
-  background-size: contain;
-  height: 200px;
+  background-size: cover;
+  height: 250px;
+  width: 300px;
   border-radius: 20%;
-}
-
-.anna-story, .david-story, .dijon-story, .willie-story, .our-story {
-  display: none;
-  color: $mint-light;
-}
-
-.anna:hover .anna-story, .david:hover .david-story, .dijon:hover .dijon-story, .willie:hover .willie-story, .us:hover .our-story, .anna:focus .anna-story, .david:focus .david-story, .dijon:focus .dijon-story, .willie:focus .willie-story, .us:focus .our-story, .anna:active .anna-story, .david:active .david-story, .dijon:active .dijon-story, .willie:active .willie-story, .us:active .our-story{
-  display: block;
 }
 
 .david {
   background: url('david.JPG') no-repeat center; 
-  background-size: contain;
-  height: 200px;
+  background-size: cover;
+  height: 250px;
+  width: 300px;
   border-radius: 20%;
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -226,8 +219,9 @@ li.active a {
 
 .dijon {
   background: url('cuddles.JPG') no-repeat center;
-  background-size: contain;
-  height: 200px;
+  background-size: cover;
+  height: 250px;
+  width: 300px;
   border-radius: 20%;
     transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -238,14 +232,23 @@ li.active a {
 
 .willie {
   background: url('david-crys.JPG') no-repeat center;
-  background-size: contain;
-  height: 200px;
+  background-size: cover;
+   height: 250px;
+  width: 300px;
   border-radius: 20%;
     transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+}
+
+.marginTopBottom {
+  margin: 100px auto;
+}
+
+.justify {
+  text-align: justify !important;
 }
 
 //footer 
