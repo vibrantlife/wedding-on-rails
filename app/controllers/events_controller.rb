@@ -7,6 +7,9 @@ class EventsController < ApplicationController
     
   end
 
+  def rsvp
+  end
+
   # def show
   #   @group = Group.new
   #   @primary_venue_photo = VenuePhoto.find(@event.primary_venue_photo).file_url unless @event.primary_venue_photo.nil?

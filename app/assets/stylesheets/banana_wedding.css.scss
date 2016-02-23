@@ -6,6 +6,10 @@ $mint-dark: #769E9B;
 $brown: #c9b79e;
 $off-white: #fafafa;
 
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
 .col-sm-12 {
   padding: 0 !important;
 }
@@ -156,11 +160,10 @@ li.active a {
   img {
     border-radius: 50%;
   }
-  h2, p {
+  h2, p, a {
     color: $off-white;
   }
   a {
-    color: $mint-dark;
     text-decoration: underline;
   }
 }

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
  get '/potluck' =>  'events#index'
  get '/photos' => 'photos#index'
  get '/our-story' => 'tasks#index'
+ get '/rsvp' => 'events#rsvp'
 
   # resources :events, except: [:index] do
 
