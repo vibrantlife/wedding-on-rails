@@ -42,4 +42,5 @@ $('a[href^="#"').on('click', function(event)
 			scrollTop: target.offset().top - 200
 		}, 1000);
 	}
-})
+});
+

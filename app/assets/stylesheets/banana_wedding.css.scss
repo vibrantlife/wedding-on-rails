@@ -160,6 +160,13 @@ li.active a {
 /*.potluck img {
   height: 300px;
 }*/
+/*iframe hell*/
+.iframeheight {
+  height: 600px !important;
+}
+.iframe {
+  height: 231px;
+}
 
 //registry section 
 .registry {
@@ -266,4 +273,11 @@ li.active a {
   padding:30px 0px;
   text-align:center;
   background:#ddd;
+}
+
+
+//rsvp page 
+#rsvp {
+  background-color: #cfe6e4;
+  /*height: 100%;*/
 }
