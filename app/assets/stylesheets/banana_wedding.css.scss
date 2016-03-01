@@ -16,7 +16,7 @@ body {
 
 .row {
   max-width: 120.5rem;
-  padding: 20px 30px;
+  padding: 10px 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -60,6 +60,13 @@ header {
     }
 }
 
+.iframe-container iframe{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .navbar-default {
   background-color: rgba(0, 0, 0, 0.3);

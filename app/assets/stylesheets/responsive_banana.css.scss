@@ -11,7 +11,7 @@
 	}
 
 	#table-of-food {
-		height: 830px;
+		height: 14em !important;
 		.col-sm-12 {
 			padding-top: 2.5em !important;
 		}
@@ -51,7 +51,7 @@
 		background-color: $salmon !important;
 	}
 	#hero{
-		height: 16em;
+		height: 13em;
 		.header {
 			position: relative !important;
 			top: 50%;
@@ -74,6 +74,28 @@
 		.wedding-info {
 			margin: 0;
 		}
+		.potluck-info {
+			display: none;
+		}
+	}
+	.anna, .david, .dijon, .willie {
+		position: relative;
+		right: 1.3em;
+	}
+	.marginTopBottom {
+		margin: auto;
+	}
+	.row {
+		padding: 5px;
+	}
+	.dijon {
+		margin-top: 70px;
+	}
+	.topbottom50 {
+		margin: 50px 0;
+	}
+	.top50 {
+		margin-top: 50px;
 	}
 
 }
