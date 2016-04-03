@@ -6,7 +6,24 @@ $mint-dark: #769E9B;
 $brown: #c9b79e;
 $off-white: #fafafa;
 
+.white {
+  color: $off-white;
+}
 
+.salmon {
+  color: $salmon;
+}
+
+.salmonBg {
+  background-color: $salmon;
+}
+
+.mint {
+  color: $mint;
+}
+.black {
+  color: #000000;
+}
 body {
   font-family: 'Open Sans', sans-serif !important;
 }
