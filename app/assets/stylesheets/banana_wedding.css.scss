@@ -179,10 +179,10 @@ li.active a {
 }*/
 /*iframe hell*/
 .iframeheight {
-  height: 600px !important;
+  /*height: 600px !important;*/
 }
 .iframe {
-  height: 231px;
+  height: 700px;
 }
 
 //registry section 
@@ -297,4 +297,8 @@ li.active a {
 #rsvp {
   background-color: #cfe6e4;
   height: 100%;
+}
+
+.lg-f-30 {
+  font-size: 30px !important; text-align: justify;
 }

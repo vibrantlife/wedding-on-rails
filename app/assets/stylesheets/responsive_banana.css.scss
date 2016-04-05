@@ -80,8 +80,8 @@
 		}
 	}
 	.anna, .david, .dijon, .willie {
-		position: relative;
-		right: 1.3em;
+	/*	position: relative;
+		right: 1.3em;*/
 	}
 	.marginTopBottom {
 		margin: auto;
@@ -100,6 +100,20 @@
 	}
 	#rsvp {
 		height: 100%;
+	}
+
+	.iframe {
+		height: 440px;
+		margin-bottom: 50px;
+	}
+	.theme--popcorn h2 {
+		font-size: 4.2em;
+	}
+	.lg-f-30 {
+		font-size: 20px !important;
+	}
+	.theme--popcorn h1 {
+		/*font-size: 3em;*/
 	}
 
 }
