@@ -9,9 +9,12 @@ $off-white: #fafafa;
 .white {
   color: $off-white;
 }
+.whiteBg {
+  background-color: $off-white;
+}
 
 .salmon {
-  color: $salmon;
+  color: $salmon !important;
 }
 
 .salmonBg {
@@ -23,6 +26,13 @@ $off-white: #fafafa;
 }
 .black {
   color: #000000;
+}
+.mintDark {
+  color: $mint-dark !important;
+}
+
+.mintDarkBg {
+background-color: $mint-dark;
 }
 body {
   font-family: 'Open Sans', sans-serif !important;
